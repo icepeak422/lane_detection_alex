@@ -11,7 +11,8 @@ fullyConnectedLayer(16, 'Name', 'fcLane1');
 reluLayer('Name','fcLane1Relu');
 fullyConnectedLayer(12, 'Name', 'fcLane2');
 regressionLayer('Name','output')];
-untrained_net = [layers; outputLayers];```
+untrained_net = [layers; outputLayers];
+```
 
 
 ## How to deal with the raw image
