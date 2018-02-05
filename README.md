@@ -23,8 +23,14 @@ Second, open labeler.m to label the image, we initially label three points for e
 Here I have already labeled two folder: cordova1 and washington1, the ground truth label all in gt_c1w1.m file.
 
 ## Train the alexnet
+
 1. Divide the whole dataset to different poportion to train, validate, and test the network
+
 ```
 [trainInd,valInd,testInd] = dividerand(num_slice,0.8,0.1,0.1);
 ```
-2.run train_dl_network.m to see the training process.
+
+ 2.run train_dl_network.m to see the training process.
+ 
+ ## Test the alexnet
+run test_dl.m to see the network performance on testset. the little red line on the right is the part of the ground truth of the image.
