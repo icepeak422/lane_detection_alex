@@ -16,9 +16,15 @@ untrained_net = [layers; outputLayers];
 
 
 ## How to deal with the raw image
-First compress the image to 227x227x3 using image_compress.m which is the input of alexnet.
+First, compress the image to 227x227x3 using image_compress.m which is the input of alexnet.
 
-Second open labeler.m to label the image, we initially label three points for each lane. When you are labeling different folder, remember to change the directory's name.
+Second, open labeler.m to label the image, we initially label three points for each lane. When you are labeling different folder, remember to change the directory's name.
 
 Here I have already labeled two folder: cordova1 and washington1, the ground truth label all in gt_c1w1.m file.
+
 ## Train the alexnet
+1. Divide the whole dataset to different poportion to train, validate, and test the network
+```
+[trainInd,valInd,testInd] = dividerand(num_slice,0.8,0.1,0.1);
+```
+2.run train_dl_network.m to see the training process.
