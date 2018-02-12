@@ -34,3 +34,4 @@ Here I have already labeled two folder: cordova1 and washington1, the ground tru
  
  ## Test the alexnet
 run test_dl.m to see the network performance on testset. the little red line on the right is the part of the ground truth of the image.
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Trained by 587 images")
